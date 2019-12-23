@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diện tích hình chữ nhật</title>
+</head>
+
+<body>
+    <input id="chieurong" type="number" placeholder="Nhập chiều rộng">
+    <input id="chieudai" type="number" placeholder="Nhập chiều dài">
+    <button id="dientich" onclick="dientich ()" type="submit">ok</button>
+
+    <div id="result"></div>
+    <script>
+        function dientich() {
+            let chieurong = parseInt(document.getElementById("chieurong").value);
+            let chieudai = parseInt(document.getElementById("chieudai").value);
+            let result;
+            if (chieurong > 0 && chieudai > 0) {
+                result = chieurong * chieudai;
+                document.getElementById("result").innerHTML = "dientichla=  " + result;
+            } else {
+                document.write(" Ko hợp lệ");
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển m sang ft</title>
+</head>
+
+<body>
+    <input id="chuyen" type="number" placeholder="Nhập số">
+    <select id="loai">
+        <option value="m">m</option>
+        <option value="ft">ft</option>
+    </select>
+    <button onclick="chuyen()">Chuyển</button>
+    <div id="ketqua"></div>
+    <script>
+        function chuyen() {
+            let chuyen = +document.getElementById("chuyen").value;
+            let loai = document.getElementById("loai").value;
+            let ketqua;
+            if (loai == "m") {
+                ketqua = chuyen * 3.2808;
+                document.getElementById("ketqua").innerHTML = ketqua +" ft";
+            } else if (loai == "ft") {
+                ketqua = chuyen / 3.2808;
+                document.getElementById("ketqua").innerHTML = ketqua +" m";
+            }
+        }
+    </script>
+</body>
+
+</html> 

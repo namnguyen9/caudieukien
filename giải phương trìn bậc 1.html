@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Giải phương trình bậc nhất</title>
+</head>
+
+<body>
+    <script>
+        let a = parseFloat(prompt("Nhập a"));
+        let b = parseFloat(prompt("Nhập b"));
+        function giaiphuongtrinhbac1(a, b) {
+            if (a != 0) {
+                let x = -b / a;
+                console.log(x);
+            } else if (a == 0 && b == 0) {
+                console.log("phương trình có vô số nghiệm");
+            } else if (a == 0 && b != 0) {
+                console.log("phương trình vô nghiệm");
+            }
+        }
+        giaiphuongtrinhbac1(a, b);
+    </script>
+
+</body>
+
+</html>

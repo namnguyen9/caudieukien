@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> C độ sang độ F</title>
+</head>
+<body>
+    <input id="doC" type="number" placeholder="Nhập độ C">
+    <
+    <button id="chuyen" type="button" onclick="doC()">ChuyểnsangđộF</button>
+    <div id="ketqua"></div> </div>
+    <script>
+        function doC () {
+            let doC = parseFloat(document.getElementById("doC").value);
+            let doF = doC * 9/5 + 32;
+        document.getElementById("ketqua").innerHTML = doF + " độ F";
+        }
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
